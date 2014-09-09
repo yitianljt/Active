@@ -8,6 +8,7 @@
 
 #include "CoverScene.h"
 #include "CoverLayer.h"
+#include "SelectLayer.h"
 USING_NS_CC;
 
 bool CoverScene::init()

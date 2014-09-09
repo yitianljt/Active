@@ -11,7 +11,6 @@
 
 #include <iostream>
 #include "cocos2d.h"
-#include "UILayout.h"
 
 
 class CoverLayer:public cocos2d::Layer
@@ -27,7 +26,6 @@ private:
     
     float _fWidth;
     float _fHeight;
-    cocos2d::ui::Layout* _widget;
     Layer* _menuLayer;
     cocos2d::LayerColor* _LayerBtnStart;
     cocos2d::LayerColor* _LayerBtnRecord;

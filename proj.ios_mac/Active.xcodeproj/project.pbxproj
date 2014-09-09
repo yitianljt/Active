@@ -58,13 +58,16 @@
 		50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EF62A117ECD613001EB2F8 /* Icon-50.png */; };
 		A9D1F8D719B82D8C00A117D5 /* CoverScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9D1F8D519B82D8C00A117D5 /* CoverScene.cpp */; };
 		A9D1F8DA19B82D9600A117D5 /* CoverLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9D1F8D819B82D9600A117D5 /* CoverLayer.cpp */; };
-		A9D1F8F719B8650500A117D5 /* ccs in Resources */ = {isa = PBXBuildFile; fileRef = A9D1F8EE19B8650500A117D5 /* ccs */; };
 		A9D1F8F819B8650500A117D5 /* CloseNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = A9D1F8EF19B8650500A117D5 /* CloseNormal.png */; };
 		A9D1F8F919B8650500A117D5 /* CloseSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = A9D1F8F019B8650500A117D5 /* CloseSelected.png */; };
 		A9D1F8FE19B8650500A117D5 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = A9D1F8F519B8650500A117D5 /* fonts */; };
 		A9D1F8FF19B8650500A117D5 /* HelloWorld.png in Resources */ = {isa = PBXBuildFile; fileRef = A9D1F8F619B8650500A117D5 /* HelloWorld.png */; };
 		A9D1FAF519B866D300A117D5 /* ComUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9D1FAF319B866D300A117D5 /* ComUtil.cpp */; };
 		A9D1FAFD19B94BC000A117D5 /* image in Resources */ = {isa = PBXBuildFile; fileRef = A9D1FAFC19B94BC000A117D5 /* image */; };
+		A9D1FB0019B99BBA00A117D5 /* SelectLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9D1FAFE19B99BBA00A117D5 /* SelectLayer.cpp */; };
+		A9D1FB0C19B9BD7100A117D5 /* ccs in Resources */ = {isa = PBXBuildFile; fileRef = A9D1FB0B19B9BD7100A117D5 /* ccs */; };
+		A9D1FB0F19BAF9B100A117D5 /* SelectScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9D1FB0D19BAF9B100A117D5 /* SelectScene.cpp */; };
+		A9D1FB1119BAFC4000A117D5 /* music in Resources */ = {isa = PBXBuildFile; fileRef = A9D1FB1019BAFC4000A117D5 /* music */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -264,7 +267,6 @@
 		A9D1F8D619B82D8C00A117D5 /* CoverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverScene.h; sourceTree = "<group>"; };
 		A9D1F8D819B82D9600A117D5 /* CoverLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CoverLayer.cpp; sourceTree = "<group>"; };
 		A9D1F8D919B82D9600A117D5 /* CoverLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverLayer.h; sourceTree = "<group>"; };
-		A9D1F8EE19B8650500A117D5 /* ccs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ccs; path = ../Resources/ccs; sourceTree = "<group>"; };
 		A9D1F8EF19B8650500A117D5 /* CloseNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CloseNormal.png; path = ../Resources/CloseNormal.png; sourceTree = "<group>"; };
 		A9D1F8F019B8650500A117D5 /* CloseSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CloseSelected.png; path = ../Resources/CloseSelected.png; sourceTree = "<group>"; };
 		A9D1F8F519B8650500A117D5 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = ../Resources/fonts; sourceTree = "<group>"; };
@@ -272,6 +274,12 @@
 		A9D1FAF319B866D300A117D5 /* ComUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ComUtil.cpp; sourceTree = "<group>"; };
 		A9D1FAF419B866D300A117D5 /* ComUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComUtil.h; sourceTree = "<group>"; };
 		A9D1FAFC19B94BC000A117D5 /* image */ = {isa = PBXFileReference; lastKnownFileType = folder; name = image; path = ../Resources/image; sourceTree = "<group>"; };
+		A9D1FAFE19B99BBA00A117D5 /* SelectLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SelectLayer.cpp; sourceTree = "<group>"; };
+		A9D1FAFF19B99BBA00A117D5 /* SelectLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectLayer.h; sourceTree = "<group>"; };
+		A9D1FB0B19B9BD7100A117D5 /* ccs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ccs; path = ../Resources/ccs; sourceTree = "<group>"; };
+		A9D1FB0D19BAF9B100A117D5 /* SelectScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SelectScene.cpp; sourceTree = "<group>"; };
+		A9D1FB0E19BAF9B100A117D5 /* SelectScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectScene.h; sourceTree = "<group>"; };
+		A9D1FB1019BAFC4000A117D5 /* music */ = {isa = PBXFileReference; lastKnownFileType = folder; name = music; path = ../Resources/music; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -483,6 +491,10 @@
 				A9D1F8D619B82D8C00A117D5 /* CoverScene.h */,
 				A9D1F8D819B82D9600A117D5 /* CoverLayer.cpp */,
 				A9D1F8D919B82D9600A117D5 /* CoverLayer.h */,
+				A9D1FAFE19B99BBA00A117D5 /* SelectLayer.cpp */,
+				A9D1FAFF19B99BBA00A117D5 /* SelectLayer.h */,
+				A9D1FB0D19BAF9B100A117D5 /* SelectScene.cpp */,
+				A9D1FB0E19BAF9B100A117D5 /* SelectScene.h */,
 			);
 			path = Layer;
 			sourceTree = "<group>";
@@ -497,8 +509,9 @@
 		A9D1F8EB19B8646600A117D5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A9D1FB1019BAFC4000A117D5 /* music */,
+				A9D1FB0B19B9BD7100A117D5 /* ccs */,
 				A9D1FAFC19B94BC000A117D5 /* image */,
-				A9D1F8EE19B8650500A117D5 /* ccs */,
 				A9D1F8EF19B8650500A117D5 /* CloseNormal.png */,
 				A9D1F8F019B8650500A117D5 /* CloseSelected.png */,
 				A9D1F8F519B8650500A117D5 /* fonts */,
@@ -683,9 +696,10 @@
 			files = (
 				A9D1FAFD19B94BC000A117D5 /* image in Resources */,
 				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
-				A9D1F8F719B8650500A117D5 /* ccs in Resources */,
+				A9D1FB0C19B9BD7100A117D5 /* ccs in Resources */,
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
+				A9D1FB1119BAFC4000A117D5 /* music in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
@@ -723,11 +737,13 @@
 			files = (
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				A9D1FAF519B866D300A117D5 /* ComUtil.cpp in Sources */,
+				A9D1FB0019B99BBA00A117D5 /* SelectLayer.cpp in Sources */,
 				A9D1F8DA19B82D9600A117D5 /* CoverLayer.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				A9D1F8D719B82D8C00A117D5 /* CoverScene.cpp in Sources */,
+				A9D1FB0F19BAF9B100A117D5 /* SelectScene.cpp in Sources */,
 				1AFAF8B816D35DE700DB1158 /* HelloWorldScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -824,6 +840,7 @@
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
+				PROVISIONING_PROFILE = "4BBAAD62-CB12-494A-A3BD-D61BC5330167";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -853,6 +870,7 @@
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
+				PROVISIONING_PROFILE = "4BBAAD62-CB12-494A-A3BD-D61BC5330167";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";

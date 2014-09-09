@@ -9,14 +9,13 @@
 #include "CoverLayer.h"
 #include "ComUtil.h"
 #include "extensions/cocos-ext.h"
-#include "cocostudio/CCActionManagerEx.h"
-#include "editor-support/cocostudio/CCSGUIReader.h"
+#include "SelectScene.h"
+
 
 using namespace std;
 
 USING_NS_CC;
 USING_NS_CC_EXT;
-using namespace ui;
 
 
 bool CoverLayer::init()
@@ -27,8 +26,14 @@ bool CoverLayer::init()
 
     _fWidth = COMWinSize().width/2;
     _fHeight = 0.75*COMWinSize().width/2;
+    LayerColor* layerBg = LayerColor::create(Color4B(104,177,59,255));
+    //LayerColor* layerBg = LayerColor::create(Color4B(146,220,121,255));
+    //LayerColor* layerBg = LayerColor::create(Color4B(130,207,191,255));
+    addChild(layerBg,0);
     
-    
+    Sprite* spBook = Sprite::create("image/cover_bookshelf.png");
+    spBook->setPosition(Point(COMWinSize().width/2,(COMWinSize().height-_fHeight*2)/2+_fHeight*2));
+    layerBg->addChild(spBook);
 
     _menuLayer = Layer::create();
     _menuLayer->setVisible(false);
@@ -46,8 +51,6 @@ bool CoverLayer::init()
     _menuLayer->addChild(_LayerBtnSet);
     _LayerBtnComment->setPosition(Point(_fWidth+_fWidth,0));
     _menuLayer->addChild(_LayerBtnComment);
-
-    
     
     return true;
 }
@@ -89,11 +92,14 @@ void CoverLayer::showIn(const function<void()> &aCall)
     spStartSel->setColor(Color3B(150,150,150));
     MenuItemSprite* itemStrat = MenuItemSprite::create(spStartNor,spStartSel,[this](Ref* f){
         CCLOG("start game");
+        //Director::getInstance()
+        CocosDenshion::SimpleAudioEngine::getInstance()->playEffect("music/Select.m4a");
+        Director::getInstance()->replaceScene(SelectScene::create());
+        
     });
     Menu* menuStart = Menu::create(itemStrat,nullptr);
     menuStart->setPosition(Point(_LayerBtnStart->getContentSize().width/2,_LayerBtnStart->getContentSize().height/2));
     _LayerBtnStart->addChild(menuStart);
-    
     
     
     Sprite* spRecordNor = Sprite::create("image/cover_btn_record.png");
@@ -101,12 +107,12 @@ void CoverLayer::showIn(const function<void()> &aCall)
     spRecordSel->setColor(Color3B(150,150,150));
     MenuItemSprite* itemRecord = MenuItemSprite::create(spRecordNor,spRecordSel,[this](Ref* f){
         CCLOG("start spRecordNor");
+        
+        
     });
     Menu* menuRecord = Menu::create(itemRecord,nullptr);
     menuRecord->setPosition(Point(_LayerBtnRecord->getContentSize().width/2,_LayerBtnRecord->getContentSize().height/2));
     _LayerBtnRecord->addChild(menuRecord);
-    
-    
     
     Sprite* spSetNor = Sprite::create("image/cover_btn_set.png");
     Sprite* spSetSel = Sprite::create("image/cover_btn_set.png");
@@ -118,10 +124,9 @@ void CoverLayer::showIn(const function<void()> &aCall)
     menuSet->setPosition(Point(_LayerBtnSet->getContentSize().width/2,_LayerBtnSet->getContentSize().height/2));
     _LayerBtnSet->addChild(menuSet);
     
-    
     Sprite* spComNor = Sprite::create("image/cover_btn_comment.png");
     Sprite* spComSel = Sprite::create("image/cover_btn_comment.png");
-    spStartSel->setColor(Color3B(150,150,150));
+    spComSel->setColor(Color3B(150,150,150));
     MenuItemSprite* itemCom = MenuItemSprite::create(spComNor,spComSel,[this](Ref* f){
         CCLOG("start spComSel");
     });
